@@ -38,4 +38,6 @@ evaluation. Ideally, loading more detail should not require replacing the parts 
 loaded into memory. It should be hierarchical, such as the mesh data in state-of-the-art implementations. To this end we design a
 neural network with multiple outputs connected to different hidden depths.
 ![architectures](https://user-images.githubusercontent.com/56926839/161315054-0b202e66-cd93-49ba-9bce-7bb7f685f529.png)
+Figure 1: Graphs of 3 designs. From left to right: no shared output weights, shared output weights, and shared output weights
+with multiclass input.
 
