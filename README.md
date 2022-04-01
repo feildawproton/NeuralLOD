@@ -62,6 +62,15 @@ Mean squared error was used for all losses.
 
 loss= ∑▒〖w_i loss_i 〗
 
-For simplicity and to prove the concept, these experiments were conducted on 2D images. The
-images were 64x64 black and white png’s made for this expe
+For simplicity and to prove the concept, these experiments were conducted on 2D images.  The images were 64x64 black and white png’s made for this experiment.  Each image is treated as a dataset containing 4096 samples with input (x,y) and labels [0,1].
+![image](https://user-images.githubusercontent.com/56926839/161315572-8520b325-f457-4838-88e5-3b74240bdbab.png)
+Figure 2:  The five images used in these experiments.  From left to right:  Leto II, Big Brother, Soma, Simon, and tanstaafl.
+
+Training was conducted with batch size equal to that of the size of the images (4096) and run for 32,768 epochs.  The Adam optimizer was used with a learning rate of 0.001.  In order to establish a baseline of comparison, a fully connected neural network with the same architecture as the ones in Figure 1, without multiple outputs, was trained to recreate these images.
+![image](https://user-images.githubusercontent.com/56926839/161315649-6ffc2476-d4dd-4990-927f-2e5aca5cb862.png)
+Figure 3:  Reconstructed images.  They are at a higher resolution that the source data to demonstrate that NNs can be super-sampled.
+
+
+
+
 
