@@ -73,12 +73,12 @@ Training was conducted with batch size equal to that of the size of the images (
 Figure 3:  Reconstructed images.  They are at a higher resolution that the source data to demonstrate that NNs can be super-sampled.
 
 Table 1: Reference Reconstructions
-Image	# Hidden	Width	Final MSE
-tanstaafl	4	256	0.0069
-Leto II	4	256	0.00098193
-Simon	3	256	0.002
-Big Brother	3	256	0.00028935
-Soma	3	128	0.0002559
+Image	#   Hidden	Width	  Final MSE
+tanstaafl	  4	    256	    0.0069
+Leto II	    4	    256	    0.00098193
+Simon	      3	    256	    0.002
+Big Brother	3	    256	    0.00028935
+Soma	      3	    128	    0.0002559
 
 
 
