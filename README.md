@@ -52,7 +52,7 @@ Dropout, with a low rate of 0.1, is used to aid in convergence. All hidden layer
 width. In all cases, the neural network acts as an occupancy map. It takes in coordinates (in this case
 2D) and returns whether or not the model is there:
 
-𝑓(𝑥, 𝑦) → [0,1].
+f(x,y)→[0,1].
 
 The returned values can be anywhere between 0 and 1. It is up to the renderer how to treat this
 value. Treating it as a probability coincides well with the meaning of the training data.
@@ -60,7 +60,7 @@ Because there are multiple outputs, there will be multiple loss functions (one f
 The final loss function will be a weighted sum of these loses. Error can be backpropagated as normal.
 Mean squared error was used for all losses.
 
-𝑙𝑜𝑠𝑠 = ∑𝑤𝑖𝑙𝑜𝑠𝑠𝑖
+loss= ∑▒〖w_i loss_i 〗
 
 For simplicity and to prove the concept, these experiments were conducted on 2D images. The
 images were 64x64 black and white png’s made for this expe
