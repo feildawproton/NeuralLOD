@@ -41,3 +41,24 @@ neural network with multiple outputs connected to different hidden depths.
 Figure 1: Graphs of 3 designs. From left to right: no shared output weights, shared output weights, and shared output weights
 with multiclass input.
 
+This design requires that earlier layers learn to create useful representations for later layers and
+for their own output layers. In figure 1, the design on the left uses different output weights for each
+level of detail. These output weights will not be used by later layers and are a waste of data when
+higher detail is required.
+To address this we tested sharing weights across the output layers. This reduces the memory
+footprint of the entire model and eliminates wasted portions of the model. All layers of the model
+previously loaded will be reused when higher LOD is required.
+Dropout, with a low rate of 0.1, is used to aid in convergence. All hidden layers have the same
+width. In all cases, the neural network acts as an occupancy map. It takes in coordinates (in this case
+2D) and returns whether or not the model is there:
+𝑓(𝑥, 𝑦) → [0,1].
+The returned values can be anywhere between 0 and 1. It is up to the renderer how to treat this
+value. Treating it as a probability coincides well with the meaning of the training data.
+Because there are multiple outputs, there will be multiple loss functions (one for each output).
+The final loss function will be a weighted sum of these loses. Error can be backpropagated as normal.
+Mean squared error was used for all losses.
+𝑙𝑜𝑠𝑠 = ∑𝑤𝑖
+𝑙𝑜𝑠𝑠𝑖
+For simplicity and to prove the concept, these experiments were conducted on 2D images. The
+images were 64x64 black and white png’s made for this expe
+
