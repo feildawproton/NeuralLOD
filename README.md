@@ -135,6 +135,6 @@ Leto II				(.25,1,4,16)	0.0199	0.0038	0.0014	0.00091608
 This research demonstrates that the idea of a neural network with hierarchical LOD is possible.  The final reconstructions are comparable to those produced by a straight forward neural network that cannot produce intermediate representations.  To be truly useful, experiments with this technique should be performed in 3D.  If this works well, the idea introduced in this paper may be useful for both real-time graphics and learning applications.
 
 ## Using the scripts
-
+Directly execute the numbered scripts, for example:  python 4_shared_weights.py
 
 
