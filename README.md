@@ -1,7 +1,7 @@
 # NeuralLOD
 LOD with neural networks
 
-I. Abstract
+## I. Abstract
 Levels-of-detail (LODs) are an important concept in real-time graphics where higher detail models, with
 higher memory costs, replace lower detail models upon closer inspection. Recently, LOD has been made
 hierarchical so that memory and calculations from lower LODs are reused and the memory and
