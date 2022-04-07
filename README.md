@@ -1,5 +1,5 @@
 # NeuralLOD
-LOD with neural networks
+LOD with neural networks. 2021 for ECE8990.
 
 ## Abstract
 Levels-of-detail (LODs) are an important concept in real-time graphics where higher detail models, with
